@@ -8,7 +8,7 @@ module.exports = {
 
   // Currently we need to add '.ts' to the resolve.extensions array.
   resolve: {
-    extensions: ['', '.js', '.ts', '.tsx', '.jsx']
+    extensions: ['', '.ts', '.tsx', '.js', '.jsx']
   },
 
   module: {
