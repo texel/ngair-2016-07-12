@@ -8,13 +8,13 @@ module.exports = {
 
   // Currently we need to add '.ts' to the resolve.extensions array.
   resolve: {
-    extensions: ['', '.ts', '.tsx', '.js', '.jsx']
+    extensions: ['', '.js', '.ts', '.tsx', '.jsx']
   },
 
   module: {
     loaders: [
       {test: /\.css$/, loader: "style!css"},
-      {test: /\.ts$/, loader: 'awesome-typescript-loader'}
+      {test: /\.ts$/, loader: 'ts-loader'}
     ]
   }
 };
