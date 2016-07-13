@@ -4,6 +4,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({name: 'messageBody'})
 export class MessageBodyPipe implements PipeTransform {
   transform(msgText: string): number {
-    return msgText.split(/\n/).map(p => `<p>${p}</p>`).join('\n');
+    return parseInt(msgText.split(/\n/).map(p => `<p>${p}</p>`).join('\n'), 10);
   }
 }
